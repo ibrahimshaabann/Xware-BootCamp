@@ -6,7 +6,7 @@
 
 1 - How would you copy all files and directories from one directory to another, including subdirectories and their contents?
 
-
+   -> cp -a #source  #destination
 
 _____________________________________________________________________________________________________
 
