@@ -1,4 +1,4 @@
-#Day3
+# Day3
 
 ## HTML Exercise 1
 Design google search GUI using HTML
@@ -19,4 +19,4 @@ so let's gather information about the people in the camp their experiences, hopp
 and more.
 
 ## HTML Exercise 4
-## **Design a Table**
+### **Design a Table**
