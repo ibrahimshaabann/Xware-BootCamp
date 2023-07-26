@@ -1,4 +1,4 @@
-Sure! Here are HTML tags, table tags, `<span>` tags, `<label>` tags with input types, examples on tables, and CSS properties written in Markdown:
+
 
 ## HTML Tags:
 

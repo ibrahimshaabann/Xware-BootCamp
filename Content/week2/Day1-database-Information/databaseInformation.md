@@ -1,9 +1,9 @@
-Sure! Here are the answers in markup language:
 
-1. Page Unit in Database:
+
+## Page Unit in Database:
 A page unit in a database refers to the smallest fixed-size block of data that can be read from or written to disk. It is used as a basic unit for data storage and retrieval. Databases store data on disk in pages to efficiently manage data storage and minimize disk I/O operations. Each page typically contains a specific number of data records or data blocks. When the database needs to read or write data, it operates on entire pages, reducing the overhead of reading or writing individual data items.
 
-2. Queries Execution with Execution Engine and Buffer Flow:
+## Queries Execution with Execution Engine and Buffer Flow:
 When a query is executed in a database, it goes through the following steps:
 
 - Query Parsing: The database management system (DBMS) first parses the query to understand its syntax and semantics.
@@ -14,14 +14,14 @@ When a query is executed in a database, it goes through the following steps:
 
 - Buffer Flow: When data is read from the disk, it is loaded into a buffer pool in memory. The buffer pool acts as a cache, holding frequently accessed data pages. When a query needs to read data, the engine first checks if the data is in the buffer pool. If it is, the engine retrieves it from memory, reducing the need for disk I/O, which is slower.
 
-3. Difference between SQL and NoSQL Databases:
+## Difference between SQL and NoSQL Databases:
 SQL (Structured Query Language) and NoSQL (Not Only SQL) databases are two main categories of databases with different data models and characteristics:
 
 - SQL Databases: SQL databases are relational databases that use SQL as the standard query language. They have a predefined schema that defines the structure of the data in tables with rows and columns. SQL databases are suitable for structured data and well-defined relationships between entities. They provide strong consistency, ACID properties (Atomicity, Consistency, Isolation, Durability), and are widely used for transactional applications.
 
 - NoSQL Databases: NoSQL databases are non-relational databases that offer more flexibility in data modeling. They can handle unstructured or semi-structured data and are suitable for large-scale, distributed, and real-time applications. NoSQL databases relax consistency requirements in favor of high availability and scalability. They often use BASE properties (Basically Available, Soft state, Eventually consistent) instead of strict ACID properties.
 
-4. ACID and CRUD:
+## ACID and CRUD:
 
 - ACID:
   - Atomicity: Ensures that a transaction is treated as a single unit of work, either all its operations are completed successfully or none at all.
@@ -35,7 +35,7 @@ SQL (Structured Query Language) and NoSQL (Not Only SQL) databases are two main 
   - Update: Modifying existing data in the database.
   - Delete: Removing records or objects from the database.
 
-5. Difference between CAD and BASE:
+## Difference between CAD and BASE:
 
 - CAD (Consistency, Availability, Durability):
   - Consistency: Similar to ACID, CAD ensures that the database remains in a valid state after a transaction.
@@ -47,7 +47,7 @@ SQL (Structured Query Language) and NoSQL (Not Only SQL) databases are two main 
   - Soft state: The system can be in an intermediate or partially inconsistent state during updates or replication.
   - Eventually consistent: Over time, the system converges to a consistent state as updates propagate through the system.
 
-6. Primary Key as Clustered Index:
+## Primary Key as Clustered Index:
 In some SQL databases, the primary key is automatically implemented as a clustered index. A clustered index determines the physical order of data in a table based on the values of the indexed columns. When a table has a clustered index on the primary key, the rows of the table are physically stored on disk in the order of the primary key's values.
 
 This arrangement has several benefits:
