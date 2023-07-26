@@ -10,7 +10,9 @@
 
 
 ### Select all Professors with the Age is 40
-  * SELECT * FROM Professor WHERE age=40;
+```
+  SELECT * FROM Professor WHERE age=40;
+```
   
 ### Select all Professors with the salary greater than 10000
   * SELECT * FROM Professor WHERE Salary>10000;
