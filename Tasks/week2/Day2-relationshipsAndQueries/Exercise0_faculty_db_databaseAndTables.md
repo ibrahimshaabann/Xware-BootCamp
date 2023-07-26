@@ -3,11 +3,11 @@
 ## Creating database and tables and relationships
 * **CREATE DATABASE faculty_db;**
 
-```
+```sql
 CREATE DATABASE faculty_db;
 ```
 
-```
+```sql
 CREATE TABLE Student (
     Stu_id SERIAL PRIMARY KEY,
     F_Name VARCHAR(15) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE Student (
 );
 ```
 
-```
+```sql
 CREATE TABLE Professor (
     P_id SERIAL PRIMARY KEY,
     Fac_id INT REFERENCES faculty(F_id),
@@ -34,7 +34,7 @@ CREATE TABLE Professor (
 );
 ```
 
-```
+```sql
 CREATE TABLE Subjects (
     Sub_id SERIAL PRIMARY KEY,
     Sub_name VARCHAR(15) NOT NULL,
@@ -43,7 +43,7 @@ CREATE TABLE Subjects (
 );
 ```
 
-```
+```sql
 CREATE TABLE Course (
     C_id SERIAL PRIMARY KEY,
     Duration VARCHAR(10) NOT NULL,
@@ -52,14 +52,14 @@ CREATE TABLE Course (
 );
 ```
 
-```
+```sql
 CREATE TABLE faculty (
     F_id SERIAL PRIMARY KEY,
     F_Name VARCHAR(15) NOT NULL
 );
 ```
 
-```
+```sql
 CREATE TABLE department (
     D_id SERIAL PRIMARY KEY,
     D_Name VARCHAR(15) NOT NULL,
@@ -67,7 +67,7 @@ CREATE TABLE department (
 );
 ```
 
-```
+```sql
 CREATE TABLE Address (   
     A_id SERIAL PRIMARY KEY,
     Gvernorate VARCHAR(15) NULL,
@@ -77,7 +77,7 @@ CREATE TABLE Address (
 );
 ```
 
-```
+```sql
 CREATE TABLE Student_Address (   
     Stu_A_id SERIAL PRIMARY KEY,
     A_id INT NOT NULL REFERENCES Address(A_id),
@@ -85,7 +85,7 @@ CREATE TABLE Student_Address (
 );
 ```
 
-```
+```sql
 CREATE TABLE Exams (   
     E_id SERIAL PRIMARY KEY,
     Course_id INT NOT NULL REFERENCES Course(C_id),
@@ -95,7 +95,7 @@ CREATE TABLE Exams (
 );
 ```
 
-```
+```sql
 CREATE TABLE Course_Enrolment (
     C_E_id SERIAL PRIMARY KEY,
     C_id INT NOT NULL REFERENCES Course(C_id),

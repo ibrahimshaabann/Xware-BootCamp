@@ -3,14 +3,14 @@
 
 ## Insert One Faculty
 
-```
+```sql
 INSERT INTO faculty (F_Name) VALUES
 ('FCI') ;
 ```
         
           
 ## Insert Three Departments Into This Faculty	
-```
+```sql
 INSERT INTO department (D_Name, F_id) VALUES
 ('CS', 1) ,
 ('IS', 1) ,
@@ -19,7 +19,7 @@ INSERT INTO department (D_Name, F_id) VALUES
 
 ## Insert Three Subjects In Every Department	
 
-``` 
+```sql
 INSERT INTO Subjects (Sub_name, Sub_code, Dep_id) VALUES
 ('Algorithm', 'cs501', 1),
 ('Compiler', 'cs502', 1),
@@ -35,7 +35,7 @@ INSERT INTO Subjects (Sub_name, Sub_code, Dep_id) VALUES
 
 
 ## Insert Courses With Defferent Durations
-```
+```sql
 INSERT INTO Course (Duration, Sub_ID, P_id) VALUES
 ('3 hours', 1, 1),
 ('3 hours', 2, 2),
@@ -49,7 +49,7 @@ INSERT INTO Course (Duration, Sub_ID, P_id) VALUES
 ```
 
 ## Insert data into professor
-```
+```sql
 INSERT INTO Professor (Fac_id ,Dep_id , F_Name , L_Name ,Age ,Salary ,Prof_image ) 
 VALUES
 (1, 1, 'Mostafa', 'Kamel', 40, 8000, 'SSSSS'),
@@ -65,7 +65,7 @@ VALUES
 
 ## Insert Atleast Five Students In Every Department
 
-```
+```sql
 INSERT INTO student(F_Name, L_Name, F_Phone, Birth_date, Dep_id) 
  VALUES 
  ('Ibrahim ', 'Shaaban', '01002555227', '2002-5-9', 1),
@@ -87,7 +87,7 @@ INSERT INTO student(F_Name, L_Name, F_Phone, Birth_date, Dep_id)
 	
 ## Insert Exams For Every Course
 
-```
+```sql
 INSERT INTO Exams(Course_id ,examDate ,examTime , duration ) VALUES 
 (2, '2023-5-29', '09:00', '2 hours'),
 (3, '2023-6-3', '11:00', '2 hours'),

@@ -1,5 +1,6 @@
 # Exercise1
 
+```sql
 * CREATE TABLE Student (
   * Stu_id BIGINT PRIMARY KEY,
   * F_Name VARCHAR(15) NOT NULL,
@@ -74,3 +75,4 @@ CREATE TABLE Exams (
    * C_id BIGINT NOT NULL,
    * Sub_id BIGINT NOT NULL
 * );
+```
