@@ -4,21 +4,20 @@
 
 #### Q1 - Use the cat command to display the contents of a file named "data.txt" and pipe the output to the grep command to search for the word "hello".
 
+```js
        $ cat data.txt | grep "hello" -i
-
-
-_________________________________________________________________________________________________________________________________________________________________
+```
 
 #### Q2 - Use the sort command to alphabetically order the lines of a file named "words.txt" and redirect the sorted output to a new file named "sorted_words.txt".
-
+```js
        $ sort words.txt > sorted_words.txt
+```
 
-
-________________________________________________________________________________________________________________________________________________________________
 
 #### Q3 - Use the uniq command to filter out duplicate lines from a file named "numbers.txt" and redirect the unique lines to a new file named "unique_numbers.txt".
 
-       $ cat numbers.txt
+```js
+ $ cat numbers.txt
   
        5
        5
@@ -32,8 +31,13 @@ ________________________________________________________________________________
        74
        9 5
        6 5
+```
 
-       $ uniq numbers.txt > uniq_numbers.txt
+```js
+$ uniq numbers.txt > uniq_numbers.txt
+```
+
+```js
 
        $ cat uniq_numbers.txt 
  
@@ -46,14 +50,18 @@ ________________________________________________________________________________
        74
        9 5
        6 5
+```
+      
 
-______________________________________________________________________________________________________________________________________________________________
 
 #### Q4 - Create an alias named "xware" that executes the command ls -l every time it is invoked.
 
-      $ alias xware="ls -l"
-
-      $ xware  
+```js
+ $ alias xware="ls -l"
+```
+     
+```js
+ $ xware  
   
       total 44
       -rw-rw-r-- 1 new new   25 Jul 18 11:35 data.txt
@@ -67,29 +75,30 @@ ________________________________________________________________________________
       -rw-rw-r-- 1 new new   24 Jul 16 17:59 text.txt
       -rw-rw-r-- 1 new new   24 Jul 18 11:43 uniq_numbers.txt
       -rw-rw-r-- 1 new new   36 Jul 18 11:39 words.txt
+```
+     
 
-
-___________________________________________________________________________________________________________________________________________________________________
 
 #### Q5 - display the list of environmental variables in the terminal.
 
+```js
 
       $ env | grep "USER"
 
         USERNAME=new
         USER=new
-
-__________________________________________________________________________________________________________________________________________________
+```
 
 #### Q6 - list the previously executed commands.
 
+```js
       $ history
+```
 
-
-___________________________________________________________________________________________________________________________
 
 #### Q7 - display the network interfaces and their configurations.
 
+```js
       $ ip addr
-
+```
 
