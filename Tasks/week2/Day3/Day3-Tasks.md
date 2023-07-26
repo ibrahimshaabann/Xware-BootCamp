@@ -5,6 +5,7 @@
   4. Select All Student Name In Every Couse.
 
 
+##Answers
 
 1. Select Subject id, Subject Name, Subject Code, Course Duration in One Query
 
