@@ -1,7 +1,7 @@
 # Python Basics :muscle:
 
 `Create two variables x = 10, y = 20 and swap them in two ways`
-- First way
+### First way
 ```python
 x = 10
 y = 20
@@ -19,15 +19,14 @@ print("\tx = ", x)
 print("\ty = ", y, "\n\n" )
 ```
 
-- Second Way :flushed:
+### Second Way :flushed:
 ```python
 x, y = y, x   
 
 ```
 ___
 `Guessing game Problem`
- ** The user will enter a number in the range from zero to 10 and tell him
- if the number he entered is smaller or larger than the random number **
+**The user will enter a number in the range from zero to 10 and tell him if the number he entered is smaller or larger than the random number**
  
  
 ```python
@@ -53,14 +52,14 @@ print("\n\t CPNGRATULATIONS !!!! YOU GOT THE CORRECT NUMBER \n")
 ```
 ___
 
-`Ways of Printing in python and for loop`
-```
+### Ways of Printing in python and for loop
+```python
 for i in range(10):
     print("S" + str(i)) # -> First way
     print (f"Hello {i * i}") # f-string way
 ```
 ___
-`lists and pass keyword`
+### lists and pass keyword
 ```python
 dates = [2002, 2003, 2004]
 N = len(dates)
