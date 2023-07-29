@@ -48,7 +48,7 @@ SELECT mems.firstname as memfname, mems.surname as memsname,
 						ORDER BY mems.surname, mems.firstname;
 ```
 
-### 5. [Produce a list of all members who have used a tennis court] (https://pgexercises.com/questions/basic/unique.html) <span style = "color: Red">That's a good question! </span> :like:
+### 5. [Produce a list of all members who have used a tennis court] (https://pgexercises.com/questions/basic/unique.html) <span style = "color: Red;">That's a good question! </span> :+1:
 > Answer
 ```sql
 SELECT DISTINCT (cd.members.firstname || ' ' || cd.members.surname) AS member ,
