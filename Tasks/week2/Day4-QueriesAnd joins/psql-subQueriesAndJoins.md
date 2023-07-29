@@ -1,6 +1,6 @@
 # Queries and Joins exercises from psql
 
-### 1. <a href = "https://pgexercises.com/questions/joins/simplejoin.html"> Retrieve the start times of members' bookings</a>
+### <a href = "https://pgexercises.com/questions/joins/simplejoin.html">1. Retrieve the start times of members' bookings</a>
 
 > Answer
 ```sql
@@ -13,7 +13,8 @@ SELECT starttime from cd.bookings
 		);
 ```
 
-### 2. [Work out the start times of bookings for tennis courts - LIKE operator] (https://pgexercises.com/questions/joins/simplejoin2.html)
+### <a href = "https://pgexercises.com/questions/joins/simplejoin2.html"> 2. Work out the start times of bookings for tennis courts - LIKE operator</a>
+
 > Answer
 ```sql
 SSELECT cd.bookings.starttime, cd.facilities.name 
@@ -27,7 +28,8 @@ SSELECT cd.bookings.starttime, cd.facilities.name
 ORDER BY cd.bookings.starttime;
 ```
 
-### 3. [Produce a list of all members who have recommended another member- SELF RELATIONSHIP] (https://pgexercises.com/questions/joins/self.html)
+### <a href = "https://pgexercises.com/questions/joins/self.html">3. [Produce a list of all members who have recommended another member- SELF RELATIONSHIP]</a>
+
 > Answer
 ```sql
 SELECT DISTINCT recs.firstname as firstname, recs.surname surname
@@ -38,7 +40,8 @@ SELECT DISTINCT recs.firstname as firstname, recs.surname surname
 ORDER BY surname, firstname;
 ```
 
-### 4. [Produce a list of all members, along with their recommender] (https://pgexercises.com/questions/joins/self2.html)
+### <a href = "https://pgexercises.com/questions/joins/self2.html">4. Produce a list of all members, along with their recommender</a>
+
 > Answer
 ```sql
 SELECT mems.firstname as memfname, mems.surname as memsname,
@@ -49,8 +52,9 @@ SELECT mems.firstname as memfname, mems.surname as memsname,
 						ORDER BY mems.surname, mems.firstname;
 ```
 
-### 5. [Produce a list of all members who have used a tennis court] (https://pgexercises.com/questions/basic/unique.html) 
-* <span style = "color: Red;">That's a good question! </span> :+1:
+### <a href = "https://pgexercises.com/questions/basic/unique.html">5. Produce a list of all members who have used a tennis court</a>
+
+* <p style = "color: Red;">That's a good question! </p> :+1:
 > Answer
 ```sql
 SELECT DISTINCT (cd.members.firstname || ' ' || cd.members.surname) AS member ,
