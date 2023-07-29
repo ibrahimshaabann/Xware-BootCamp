@@ -1,6 +1,7 @@
 # Queries and Joins exercises from psql
 
-### 1. [Retrieve the start times of members' bookings] (https://pgexercises.com/questions/joins/simplejoin.html)
+### 1. <a href = "https://pgexercises.com/questions/joins/simplejoin.html"> Retrieve the start times of members' bookings</a>
+
 > Answer
 ```sql
 SELECT starttime from cd.bookings 
