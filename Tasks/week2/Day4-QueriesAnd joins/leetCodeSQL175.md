@@ -71,3 +71,13 @@ Address table:
 
 There is no address in the address table for the personId = 1, so we return NULL in their city and state.
 addressId = 1 contains information about the address of personId = 2.
+
+___
+
+## Answer
+```sql
+SELECT firstName, lastName, city, state
+FROM Person 
+LEFT OUTER JOIN Address
+ON Person.personId = Address.personId;
+```
