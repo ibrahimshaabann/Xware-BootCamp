@@ -1,6 +1,6 @@
 # Simple exercises from psql
 
-### 2. [Control which rows are retrieved - part 2] (https://pgexercises.com/questions/basic/where2.html)
+### <a href = "https://pgexercises.com/questions/basic/where2.html"> 1. Control which rows are retrieved - part 2</a>
 > Answer
 ```sql
 SELECT facid, name, membercost, monthlymaintenance 
@@ -9,22 +9,21 @@ SELECT facid, name, membercost, monthlymaintenance
 			AND membercost > 0;
 ```
 
-### 2. [Basic string searches - LIKE operator] (https://pgexercises.com/questions/basic/where3.html)
+### <a href = "https://pgexercises.com/questions/basic/where3.html">2. Basic string searches - LIKE operator</a>
 > Answer
 ```sql
 SSELECT * FROM cd.facilities
 	WHERE name 
 		like '%Tennis%';
 ```
-
-### 3. [Matching against multiple possible values - IN Operator] (https://pgexercises.com/questions/basic/where4.html)
+### <a href = "https://pgexercises.com/questions/basic/where4.html">3. Matching against multiple possible values - IN Operator</a>
 > Answer
 ```sql
 SELECT * FROM cd.facilities 
 	WHERE facid IN (1, 5);
 ```
 
-### 4. [Working with dates] (https://pgexercises.com/questions/basic/date.html)
+### <a href = "https://pgexercises.com/questions/basic/date.html">4. Working with dates</a>
 > Answer
 ```sql
 SELECT memid, surname, firstname, joindate
@@ -32,7 +31,7 @@ SELECT memid, surname, firstname, joindate
 		WHERE joindate >= '2012-09-01 00:00:00'; 
 ```
 
-### 5. [Removing duplicates, and ordering results- LIMIT OPERATOR] (https://pgexercises.com/questions/basic/unique.html)
+### <a href = "https://pgexercises.com/questions/basic/unique.html">5. Removing duplicates, and ordering results- LIMIT OPERATOR</a>
 > Answer
 ```sql
 SELECT DISTINCT surname from cd.members 
@@ -40,7 +39,7 @@ SELECT DISTINCT surname from cd.members
 		LIMIT 10;
 ```
 
-### 6. [Combining results from multiple queries - UNION] (https://pgexercises.com/questions/basic/union.html)
+### <a href = "https://pgexercises.com/questions/basic/union.html">6. [Combining results from multiple queries - UNION]/a>
 > Answer
 ```sql
 SELECT name as surname from cd.facilities 
@@ -48,7 +47,7 @@ SELECT name as surname from cd.facilities
 		SELECT surname from cd.members;
 ```
 
-### 7. [More aggregation ] (https://pgexercises.com/questions/basic/agg2.html)
+### <a href = "https://pgexercises.com/questions/basic/agg2.html">7. More aggregation </a>
 > Answer
 ```sql
 SELECT firstname, surname , joindate FROM cd.members 
