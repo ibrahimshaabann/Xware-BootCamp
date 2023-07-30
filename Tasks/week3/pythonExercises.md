@@ -2,6 +2,7 @@
 
 ### <a href = "https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/C"> C. Simple Calculator
 </a>
+
 > Answer
 
 ```python
@@ -14,6 +15,7 @@ print(f"{X} - {Y} = {X - Y}")
 
 ### <a href = "https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/K">K. Max and Min
 </a>
+
 > Answer
 
 ```python
@@ -29,6 +31,7 @@ print(f"{min} {max}")
 ```
 
 ### <a href = "https://codeforces.com/group/MWSDmqGsZm/contest/219158/problem/F">F. Digits Summation</a>
+
 > Answer
 
 ```python
@@ -38,6 +41,7 @@ print(f"{int(str1[-1]) + int(str2[-1])}")
 ```
 
 ### <a href = "https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/Q">Q. Digits</a>
+
 > Answer
 
 ```python
@@ -58,6 +62,7 @@ for f in range(0, len(arrOfNums)):
 
 ### <a href = "https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/S">S. Sum of Consecutive Odd Numbers
 </a>
+
 > Answer
 
 ```python
@@ -81,6 +86,7 @@ while numOfInputs > 0:
 ### <a href = "https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/K">K. Divisors
 
 </a>
+
 > Answer
 
 ```python
@@ -93,6 +99,7 @@ while counter <= inputNum:
 
 ### <a href = "https://codeforces.com/group/MWSDmqGsZm/contest/219432/problem/J">J. Primes from 1 to n
  </a>
+
 > Answer
 
 ```python
