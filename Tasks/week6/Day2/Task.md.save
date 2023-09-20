@@ -1,0 +1,42 @@
+Sure, here's the exercise you described written in Markdown language:
+
+## Exercise: Creating a Blogging Platform with Filtering
+
+### App 1: Blog
+1. Create a new Django app named `Blog`.
+2. In the `models.py` file of the `Blog` app, define a model `Post` with the following fields:
+   - `title`
+   - `content`
+   - `pub_date`
+   - `author` (foreign key to the Author model)
+
+3. Create a `filters.py` file in the `Blog` app.
+4. Define a `PostFilter` class that inherits from `django_filters.FilterSet`.
+5. Add filters for:
+   - `title`
+   - `pub_date`
+   - `author`
+
+### App 2: Author
+1. Create another Django app named `Author`.
+2. In the `models.py` file of the `Author` app, define a model `Author` with the following fields:
+   - `first_name`
+   - `last_name`
+   - `email`
+
+### Project Configuration
+1. Add both the `Blog` and `Author` apps to the `INSTALLED_APPS` list in your project's settings.
+2. Configure the `urls.py` file of the `Blog` app to include necessary URL routes for listing and filtering posts.
+3. In the views of the `Blog` app, use the `DjangoFilterBackend` with the `filterset_class` attribute to apply the `PostFilter` class for filtering the list of posts.
+4. Create appropriate templates and views to display the list of filtered posts.
+
+### Exercise Tasks
+1. Create the models `Post` and `Author` with necessary fields in their respective apps.
+2. Define the `PostFilter` class in the `filters.py` of the `Blog` app, including filters for title, pub_date, and author.
+3. Configure the views in the `Blog` app to display a list of posts with the filters applied.
+4. Test the filtering functionality by applying different filters (e.g., filtering by title, filtering by author, etc.).
+
+### Bonus
+Implement a search functionality that allows users to search for posts based on specific keywords.
+
+By completing this exercise, you'll have a working blogging platform with filtering capabilities and the ability to search for posts. This exercise helps you practice creating models, filters, views, and templates within the Django framework

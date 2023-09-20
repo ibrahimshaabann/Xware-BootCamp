@@ -27,7 +27,7 @@ class StudenViewSet(viewsets.ModelViewSet):
     # if we wrote the next lines, then we need to include the[DjangoFilterBackend] in the 
     filterset_class = StudentFilter
 
-    filter_backends = [DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter] # Note that it doesn't have to be a list , it can be dictionary
+    filter_backends = (DjangoFilterBackend, filters.OrderingFilter, filters.SearchFilter) # Note that it doesn't have to be a list , it can be dictionary
     ordering_fields = ['age'] # Params names in the URL ------> key: ordering, value: age
    
     # Params names in the URL ------> key: search, value: name or any character to search for
@@ -52,4 +52,17 @@ class StudenViewSet(viewsets.ModelViewSet):
         
 
     #     return queryset 
+
+
+
+    # class UserLoginView(generics.CreateAPIView):
+    # def post(self, request, *args, **kwargs):
+    #     username = request.data.get('username')
+    #     password = request.data.get('password')
+    #     user = authenticate(username=username, password=password)
+    #     if user:
+    #         token, created = Token.objects.get_or_create(user=user)
+    #         return Response({'token': token.key})
+    #     else:
+    #         return Response({'error': 'Invalid credentials'}, status=400)
 
